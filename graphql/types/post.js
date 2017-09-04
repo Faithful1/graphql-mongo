@@ -9,7 +9,6 @@ import {
 } from 'graphql';
 
 import PostModel from '../../models/post';
-import { postType } deom './post';
 
 export const postType = new GraphQLObjectType({
   name: 'Post',
@@ -31,7 +30,7 @@ export const postType = new GraphQLObjectType({
 });
 
 //create user input type which is useful for inserting post(graphql input)
-export const postInputType: new GraphQLInputObjectType({
+export const postInputType = new GraphQLInputObjectType({
   name: 'PostInput',
   description: 'Insert post',
   fields: () => ({

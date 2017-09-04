@@ -12,8 +12,7 @@ export default {
     id: {
       name: 'ID',
       type: new GraphQLNonNull(GraphQLID)
-    }
-  },
+        },
   data: {
     name: 'data',
     type: new GraphQLNonNull(userInputType)
